@@ -1,0 +1,304 @@
+/* Font Face */
+@font-face {
+    font-family: roboto;
+    src: url(Assets/FONTS/Roboto-Regular.ttf);
+}
+* {
+    font-family: roboto;
+}
+#color-white {
+    color: white;
+}
+/* Variables */
+:root {
+    --blue: rgba(33, 150, 243, 1);
+    --sky-blue: rgba(178, 235, 242, 1);
+}
+/* Hero */
+.hero {
+    background: #303030;
+}
+.hero .hero-image {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.hero .row {
+    margin-top: 40px;
+}
+.hero .row button {
+    color: var(--sky-blue);
+    border: 1px solid var(--sky-blue);
+}
+.hero .row button>i {
+    color: var(--sky-blue);
+}
+.hero .row .first h2{
+    color: var(--blue);
+}
+.hero .row .first p{
+    color: white;
+}
+/* Navbar */
+.hero .container nav .navbar-collapse .button-1 {
+    color: white;
+    background-color: var(--blue);
+}
+nav .navbar-collapse ul li a {
+    font-size: 20px;
+}
+.hero .container nav .navbar-collapse .button-1:hover {
+    color: white;
+    background-color: transparent;
+    border: 1px solid var(--blue);
+}
+nav .navbar-collapse hr {
+    background-color: white;
+    width: 2px;
+    height: 35px;
+}
+nav .navbar-collapse i {
+    color: white;
+    font-size: 20px;
+}
+/* About */
+.about {
+    background: #303030;
+}
+.about .row .left .img-1{
+    position: absolute;
+    left: 0;
+    top: 0px;
+}
+.about .row .left .img-2{
+    position: absolute;
+    right:100px;
+    bottom: 240px;
+}
+.about .row .left .img-3{
+    position: absolute;
+    right: 70px;
+    bottom: 360px;
+}
+.about .row .left .img-4{
+    position: absolute;
+    right: 100px;
+    bottom: 0px;
+}
+.about .row .left .about-us {
+    width: 180px;
+    height: 180px;
+    background-color: var(--blue);
+    border-radius: 20px;
+    transform: rotate(-42deg);
+    position: absolute;
+    bottom: 270px;
+    left: 180px;
+}
+.about .about-us h1 {
+    transform: rotate(42deg);
+}
+/* Our Values */
+.value{
+    background: #303030;
+}
+.value .row .left .about-us {
+    width: 220px;
+    height: 220px;
+    background-color: var(--blue);
+    border-radius: 20px;
+    transform: rotate(-42deg);
+    position: absolute;
+    bottom: 210px;
+    left: 240px;
+}
+.value .about-us h1 {
+    transform: rotate(42deg);
+}
+/* Clients-Testimonials */
+.clients {
+    background-color: rgb(41, 53, 71);
+}
+.clients h1 {
+    color: rgb(127, 222, 251);
+}
+.clients .row .col-lg-9 .owl-carousel .item .card {
+    background-color: rgb(66, 66, 66);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.clients .row .col-lg-9 .owl-carousel .item #img-6 {
+    width: 100px;
+}
+.clients .row .col-lg-9 .owl-theme .owl-nav {
+    font-size: 30px;
+    color: white;
+}
+/* Logos */
+.logos {
+    background: #303030;
+}
+/* Case Studies */
+.case {
+    background: #303030;
+}
+.case .row h1 {
+    color: rgb(127, 222, 251);
+}
+.case .row .list button {
+    background-color: var(--blue);
+    color: white;
+    margin-top: 10px;
+}
+.case .row .list button:hover {
+    background-color: transparent;
+    border: 1px solid var(--blue);
+}
+.case .row .col-lg-10 .row img {
+    border-radius: 20px;
+}
+/* Contact */
+.contact {
+    background: #303030;
+}
+.contact .container {
+    background-color: rgba(13, 71, 161, 1);
+}
+.contact .row button {
+    background-color: white;
+    color: var(--blue);
+}
+/* Footer */
+.footer {
+    background-color: #303030;
+}
+.footer .row .col-lg-2 h6 {
+    color: rgba(187, 222, 251, 1);
+}
+.footer .row .col-lg-2 a{
+    color: white;
+}
+/* Services */
+.services {
+    background-color: rgb(41, 53, 71);
+}
+.services h1 {
+    color: rgb(127, 222, 251);
+}
+.services .d-flex a{
+    color: var(--blue);
+    font-size: 20px;
+}
+.services .row .card {
+    background-color: #303030;
+}
+.services .row .col-lg-12 .card .btn {
+    width: 100%;
+}
+.services .row .col-lg-12 .owl-theme .owl-nav {
+    font-size: 30px;
+    color: white;
+}
+/* Media Quries */
+@media (max-width:1200px) {
+    .about .row {
+        flex-direction: column;
+    }
+    .about .row .right .row {
+        flex-direction: row;
+    }
+    .value .row {
+        flex-direction: column;
+    }
+    .value .row .right .row {
+        flex-direction: row;
+    }
+}
+@media (max-width:992px) {
+    nav .navbar-collapse hr {
+        display: none;
+    }
+    nav .navbar-collapse i {
+        margin-left: 30px;
+    }
+    .value .row .left .about-us {
+        left: 380px;
+    }
+}
+@media (max-width:768px) {
+    .value .row .left .about-us {
+        left: 300px;
+    }
+    .navbar-collapse {
+        text-align: center;
+    }
+}
+@media (max-width:576px) {
+    .hero .container .main-image {
+        width: 290px;
+    }
+    .about .row .left .main {
+        width: 300px;
+    }
+    .about .row .left .img-1 {
+        width: 150px;
+        left: 20px;
+    }
+    .about .row .left .img-2{
+        width: 50px;
+        bottom: 120px;
+        right: 80px;
+    }
+    .about .row .left .img-3{
+        width: 120px;
+        bottom: 190px;
+    }
+    .about .row .left .img-4{
+        width: 120px;
+    }
+    .about .row .left .about-us {
+        width: 100px;
+        height: 100px;
+        top: 90px;
+        left: 120px;
+    }
+    .about .row .left .about-us h1 {
+        font-size: 23px;
+    }
+    .value .row .left .value-image {
+        width: 300px;
+    }
+    .value .row .left .about-us {
+        width: 120px;
+        height: 120px;
+        left: 170px;
+        bottom: 90px;
+    }
+    .case .row .col-lg-10 .row img {
+        width: 300px;
+    }
+}
+@media (max-width:375px) {
+    .about .row .left .img-2 {
+        right: 60px;
+    }
+    .about .row .left .img-3 {
+        right: 60px;
+    }
+    .about .row .left .img-4 {
+        right: 60px;
+    }
+    .about .row .left .about-us{
+        left: 90px;
+        top: 60px;
+    }
+    .value .row .left .about-us {
+        left: 140px;
+    }
+}
+@media (max-width:340px) {
+    .value .row .left .about-us {
+        left: 120px;
+    }
+}
